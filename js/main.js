@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Scroll reveal ---
   const revealTargets = document.querySelectorAll(
     '.section-header, .stats-section-header, .service-card, .stat-item, .about-left, .about-right, ' +
-    '.process-step, .testimonial, .cta-content, .service-detail, .value-card, ' +
+    '.process-step, .cta-content, .service-detail, .value-card, ' +
     '.contact-info, .contact-form, .team-intro, .page-header'
   );
 

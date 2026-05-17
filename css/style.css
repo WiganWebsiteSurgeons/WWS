@@ -598,7 +598,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   padding: 8rem var(--container-padding) 4rem;
   max-width: 1400px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-bg {
@@ -697,17 +697,23 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   font-family: var(--font-primary);
   font-size: clamp(3rem, 8vw, 7rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.12;
   letter-spacing: -0.03em;
   margin-bottom: 3rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .title-line {
   display: block;
   overflow: hidden;
+  padding-bottom: 0.08em;
 }
 
-.title-word { display: inline-block; }
+.title-word {
+  display: inline-block;
+  padding-bottom: 0.06em;
+}
 
 .hero-title em {
   font-style: italic;
@@ -1995,6 +2001,11 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
     align-items: flex-start;
   }
 
+  .hero-title {
+    font-size: clamp(2.35rem, 9.5vw, 4.5rem);
+    letter-spacing: -0.02em;
+  }
+
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .footer-links-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
@@ -2019,4 +2030,9 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .menu-link { font-size: 2rem; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+
+  .hero-title {
+    font-size: clamp(2rem, 10.5vw, 3.25rem);
+    line-height: 1.18;
+  }
 }
