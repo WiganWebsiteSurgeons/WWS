@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 32" fill="none" role="img" aria-label="Wigan Website Surgeons">
+  <defs>
+    <linearGradient id="wws" x1="2" y1="16" x2="54" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6c5ce7"/>
+      <stop offset="1" stop-color="#00cec9"/>
+    </linearGradient>
+  </defs>
+  <path d="M11 7  L5 16l6 9" stroke="url(#wws)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20 7 L24 25 L28 17 L32 25 L36 7" stroke="url(#wws)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M45 7l6 9-6 9" stroke="url(#wws)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
