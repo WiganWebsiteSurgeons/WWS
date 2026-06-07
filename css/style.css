@@ -712,6 +712,7 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
 
 .title-word {
   display: inline-block;
+  max-width: 100%;
   padding-bottom: 0.06em;
 }
 
@@ -2002,8 +2003,16 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   }
 
   .hero-title {
-    font-size: clamp(2.35rem, 9.5vw, 4.5rem);
+    font-size: clamp(2.1rem, 8.8vw, 4.5rem);
     letter-spacing: -0.02em;
+  }
+
+  .title-line {
+    overflow: visible;
+  }
+
+  .title-word {
+    display: block;
   }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
@@ -2032,7 +2041,14 @@ button { border: none; background: none; cursor: pointer; font-family: inherit; 
   .hero-actions .btn { width: 100%; justify-content: center; }
 
   .hero-title {
-    font-size: clamp(2rem, 10.5vw, 3.25rem);
-    line-height: 1.18;
+    font-size: clamp(1.85rem, 9vw, 3rem);
+    line-height: 1.15;
+  }
+}
+
+/* iPhone 13 / similar (~390px) */
+@media (max-width: 390px) {
+  .hero-title {
+    font-size: clamp(1.75rem, 8.2vw, 2.75rem);
   }
 }
